@@ -1,0 +1,29 @@
+.Ranking {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70vh;
+  width: 15vw;
+  border: 1px solid var(--blanc);
+  border-right: none;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  padding: 1rem;
+}
+
+.Ranking h2 {
+  margin-bottom: 2rem;
+}
+
+.joueurs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joueurs svg {
+  display: inline;
+}

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+/*
+1. Variables
+2. RESET
+3. Blocks
+4. Inline
+5. ID
+6. Classes
+*/
+
+/* Variables */
+
+:root {
+  --white: #f2f2f2;
+  --dark: #262626;
+  --primary: #657a8c;
+  --secondary: #d9cb89;
+  --third: #5c735d;
+  --fourth: #7a372b;
+  --success: #42db8c;
+  --error: #ff614d;
+  --info: #657a8c;
+  --font: "Nanum Myeongjo", serif;
+  --titleFont: "MedievalSharp", cursive;
+  --subTitleFont: "Bebas Neue", cursive;
+}
+
+/* 2 RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font);
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 3 Block */
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+input[type="email"],
+input[type="password"] {
+  padding-left: 1vh;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2vh;
+  font-size: 3vh;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+textarea {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  background: none;
+}
+
+/* 4 inline */
+
+table {
+  color: var(--primary);
+  font-size: 2vh;
+  border-collapse: collapse;
+  border-radius: 5px;
+  font-weight: normal;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  margin-bottom: 3vh;
+}
+
+td,
+th,
+thead,
+table {
+  padding: 8px;
+}
+
+th {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+td {
+  text-align: center;
+}
+td:not(:last-child) {
+  border-right: 1px solid var(--primary);
+}
+
+tr:nth-child(even) td {
+  background-color: #262626;
+  color: var(--body);
+}
+
+a {
+  color: var(--white);
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--font);
+  color: var(--white);
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 7rem;
+  font-family: var(--titleFont);
+}
+
+h2 {
+  color: var(--secondary);
+  font-family: var(--titleFont);
+  font-size: 1.7vw;
+}
+
+h3 {
+  color: var(--secondary);
+  font-family: var(--titleFont);
+  font-size: 2rem;
+}
+
+li {
+  color: var(--white);
+}
+
+button {
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+  color: var(--primary);
+  font-family: var(--font);
+  font-size: 2rem;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+/* 5 ID */
+/* 6 Classes */
+
+.delete {
+  color: var(--error);
+  font-size: 4vh;
+  padding: 0.5vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.error {
+  background-color: var(--error);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 10vh;
+  color: var(--white);
+  font-family: var(--titleFont);
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: var(--valid);
+}

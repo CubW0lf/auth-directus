@@ -1,0 +1,10 @@
+.Turn {
+  bottom: 20rem;
+  width: 75vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

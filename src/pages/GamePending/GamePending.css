@@ -1,0 +1,37 @@
+.GamePending {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.GamePending .family {
+  object-fit: contain;
+  display: inline;
+}
+
+table {
+  width: 50vw;
+  margin-top: 2vh !important;
+  margin-bottom: 2vh !important;
+  outline: 5px solid #111;
+}
+
+table th {
+  background-color: black;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+table td {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1vh;
+  font-size: 2vh;
+}
+
+table tr:nth-child(odd) {
+  background-color: #111;
+}

@@ -1,0 +1,9 @@
+.Hand {
+  height: 35vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
